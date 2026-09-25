@@ -22,12 +22,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-SECRET_KEY = os.getenv(
-    "SECRET_KEY",
-    "change-this-secret"
-)
-
-ALGORITHM = "HS256"
+SECRET_KEY = settings.SECRET_KEY
+ALGORITHM = settings.ALGORITHM
 
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24
 
